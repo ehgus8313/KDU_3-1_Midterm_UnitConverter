@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainback">
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LtActivity"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/qtyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="값"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/qtyEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:inputType="numberDecimal"
+                android:padding="5dp"
+                android:hint="값을 입력하세요."
+                android:layout_margin="5dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_below="@+id/linearLayout1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/convertFromTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="변환 전"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_below="@+id/linearLayout2"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/convertFromUnitTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="단위"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <Spinner
+                android:id="@+id/convertFromUnitTypeSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_below="@+id/linearLayout3"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/convertToTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="변환 후"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_below="@+id/linearLayout4"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/convertToUnitTypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="단위"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+            <Spinner
+                android:id="@+id/convertToUnitTypeSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_below="@+id/linearLayout5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/convertButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="변환"
+                android:layout_weight="1"
+                android:onClick="onClickConvertButtonEvent"/>
+
+            <Button
+                android:id="@+id/exitButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="종료"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_below="@+id/linearLayout6"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_margin="5dp">
+
+
+            <TextView
+                android:id="@+id/resultOutputTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text=""
+                android:textSize="20dp"
+                android:padding="5dp"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
